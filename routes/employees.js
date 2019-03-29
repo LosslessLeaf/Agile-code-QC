@@ -35,5 +35,9 @@ router.delete("/employee/:id", function(req, res, next) {
     });
 });
 
+router.get("employee/schedule", function(req, res, next) {
+    res.send(schedule); 
+});
+
 
 module.exports = router;

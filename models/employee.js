@@ -8,12 +8,19 @@ const EmployeeSchema = new Schema({
     name: {
         type: String,
         required: [true, "Name field is required"]
+    },
+    employeeID: {
+        type: Number,
+        required: [true, "ID required"]
+    },
+    dept: {
+        type: String,
+        required: [true, "Department required"]
+    },
+    time: {
+        clockIn: Number,
+        clockOut: Number
     }
-    // ,
-    // time: {
-    //     clockin: Number,
-    //     clockout: Number
-    // }
 });
 
 

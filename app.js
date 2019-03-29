@@ -29,6 +29,10 @@ app.get("/", function(req, res) {
     res.render("landing");
 });
 
+app.get("/schedule", function(req, res) {
+    res.render("schedule");
+});
+
 
 // listen for requests
 app.listen(process.env.PORT, process.env.IP, function() {
